@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+
+.sidebar{
+    background-color:aqua;
+}
+.container{
+    background-color: coral;
+    grid-area: 1/2;
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+}
+.header{
+    background-color: #fff;
+    grid-area: 1/1;
+}
+.content {
+    background-color: rgba(55, 34, 120, 0.7);
+}
+
