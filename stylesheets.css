@@ -2,14 +2,35 @@
     margin: 0;
     padding: 0;
 }
+html{
+    font-size: 2vw;
+}
 body{
     height: 100vh;
     display: grid;
-    grid-template-columns: 3fr 8fr;
+    grid-template-columns: 2fr 8fr;
 }
 
 .sidebar{
+    height: 100vh;
     background-color:aqua;
+    display: inline-grid;
+    grid-template-rows: 0.5fr 4fr 4fr;
+}
+.sidebar-title{
+    grid-area: 1/1/1/1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.sidebar-title h2{
+    font-size: 1rem;
+    flex-grow: 1;
+}
+.sidebar-title img{
+    padding-left: 5%;
+    flex: 1;
 }
 .container{
     background-color: coral;
