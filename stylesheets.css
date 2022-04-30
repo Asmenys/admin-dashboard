@@ -5,10 +5,10 @@
 html {
   font-size: 16px;
   --paradise-pink: #ea526fff;
-  --candy-pink: #e76b74ff;
-  --burlywood: #d7af70ff;
-  --shadow: #937d64ff;
-  --davys-grey: #585b56ff;
+  --candy-pink: #e76b74;
+  --burlywood: #d7af70;
+  --shadow: #937d64;
+  --davys-grey: #585b56;
 }
 body {
   height: 100vh;
@@ -70,7 +70,7 @@ body {
   background-color: #fff;
   grid-area: 1/1;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 3fr 2fr;
 }
 .search-bar {
@@ -113,4 +113,22 @@ body {
   color: white;
   display: grid;
   align-items: center;
+}
+.profile-utils{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    align-items: center;
+    justify-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.profile-utils img:first-of-type{
+    justify-self: end;
+}
+.profile-utils h4:first-of-type{
+    justify-self: start;
+}
+.profile-utils img:nth-of-type(2){
+    height: 3rem;
 }
