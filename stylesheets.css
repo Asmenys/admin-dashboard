@@ -18,11 +18,13 @@ body {
 
 .sidebar {
   height: 100vh;
-  background-color: aqua;
+  background-color: var(--paradise-pink);
   display: inline-grid;
   grid-template-rows: 1fr 3fr 8fr;
   gap: 5%;
+  
 }
+
 .sidebar-title {
   align-self: center;
   width: 100%;
@@ -33,6 +35,7 @@ body {
   align-items: center;
   gap: 2%;
   padding-left: 5%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(1000%);
 }
 
 .sidebar-title h2 {
@@ -55,6 +58,7 @@ body {
 .sidebar-nav div {
   display: flex;
   gap: 10px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(1000%);
 }
 .container {
   background-color: coral;
@@ -76,14 +80,14 @@ body {
   grid-template-rows: 1fr;
   gap: 3%;
 }
-.search-bar button{
-    justify-self: end;
-    border: 0;
-    background-color: white;
-    width: 1.5rem;
+.search-bar button {
+  justify-self: end;
+  border: 0;
+  background-color: white;
+  width: 1.5rem;
 }
 .search-bar #search-bar {
-    height: 1.8rem;
+  height: 1.8rem;
   background-color: var(--burlywood);
   opacity: 80%;
   border-radius: 20px;
@@ -92,4 +96,21 @@ body {
 
 .content {
   background-color: rgba(55, 34, 120, 0.7);
+}
+.content-buttons {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10%;
+  align-items: center;
+  padding-right: 10%;
+}
+.content-buttons button {
+  height: 2rem;
+  border: 0;
+  border-radius: 25px;
+  background-color: var(--paradise-pink);
+  color: white;
+  display: grid;
+  align-items: center;
 }
