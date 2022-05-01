@@ -100,7 +100,7 @@ body {
 .content-buttons {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   gap: 10%;
   align-items: center;
   padding-right: 10%;
@@ -120,7 +120,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     align-items: center;
     justify-items: center;
-    padding-right: 5%;
+    padding-right: 20%;
     padding-left: 5%;
 }
 .profile-utils img:first-of-type{
@@ -131,4 +131,19 @@ body {
 }
 .profile-utils img:nth-of-type(2){
     height: 3rem;
+}
+.user-greeting{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3%
+}
+.user-greeting img{
+  justify-self: end;
+}
+.user-greeting div {
+  display: grid;
+}
+.user-greeting div p:first-of-type{
+  font-size: 0.7rem;
+  align-self: center;
 }
