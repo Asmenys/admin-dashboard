@@ -22,7 +22,6 @@ body {
   display: inline-grid;
   grid-template-rows: 1fr 3fr 8fr;
   gap: 5%;
-  
 }
 
 .sidebar-title {
@@ -35,7 +34,8 @@ body {
   align-items: center;
   gap: 2%;
   padding-left: 5%;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(1000%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(1000%);
 }
 
 .sidebar-title h2 {
@@ -58,7 +58,8 @@ body {
 .sidebar-nav div {
   display: flex;
   gap: 10px;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(1000%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(1000%);
 }
 .container {
   background-color: coral;
@@ -114,36 +115,36 @@ body {
   display: grid;
   align-items: center;
 }
-.profile-utils{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
-    align-items: center;
-    justify-items: center;
-    padding-right: 20%;
-    padding-left: 5%;
+.profile-utils {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  align-items: center;
+  justify-items: center;
+  padding-right: 20%;
+  padding-left: 5%;
 }
-.profile-utils img:first-of-type{
-    justify-self: end;
+.profile-utils img:first-of-type {
+  justify-self: end;
 }
-.profile-utils h4:first-of-type{
-    justify-self: start;
+.profile-utils h4:first-of-type {
+  justify-self: start;
 }
-.profile-utils img:nth-of-type(2){
-    height: 3rem;
+.profile-utils img:nth-of-type(2) {
+  height: 3rem;
 }
-.user-greeting{
+.user-greeting {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 3%
+  gap: 3%;
 }
-.user-greeting img{
+.user-greeting img {
   justify-self: end;
 }
 .user-greeting div {
   display: grid;
 }
-.user-greeting div p:first-of-type{
+.user-greeting div p:first-of-type {
   font-size: 0.7rem;
   align-self: center;
 }
