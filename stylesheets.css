@@ -171,7 +171,7 @@ body {
 }
 .announcement-div {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, 80px)
 }
 
 .announcement-div > div {
@@ -180,10 +180,12 @@ body {
 }
 .announcement-div > div > h2 {
   font-size: 0.8rem;
+  align-self: end;
 }
 .announcement-div > div > p {
+  font-size: 0.6rem;
   overflow: hidden;
-  white-space: normal;
+  text-overflow: ellipsis;
 }
 
 .content-buttons {
