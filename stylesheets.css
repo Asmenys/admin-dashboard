@@ -99,8 +99,9 @@ body {
 .content {
   background-color: var(--davys-grey);
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 5fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 3%;
@@ -111,14 +112,31 @@ body {
   display: grid;
   grid-template-rows: 0.5fr 8fr;
 }
+.project-card-container{
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.project-card{
+  background-color: #fff;
+}
+.content-sidebar{
+  display: grid;
+  gap: 5%;
+}
 .announcements-container{
   display: grid;
   grid-template-rows: 1fr 8fr;
-
+}
+.announcement-card-container{
+  background-color: #fff;
 }
 .trending-container{
   display: grid;
   grid-template-rows: 1fr 8fr;
+}
+.trending-card-container{
+  background-color: #fff;
 }
 
 
